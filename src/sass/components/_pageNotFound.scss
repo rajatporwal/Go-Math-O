@@ -1,0 +1,23 @@
+.page {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  min-height: 80rem;
+
+  &__not--found {
+    padding: 10rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+
+    &__icon-2 {
+    fill: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+    }
+  }
+}

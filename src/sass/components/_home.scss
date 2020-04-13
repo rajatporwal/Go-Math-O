@@ -1,0 +1,13 @@
+.home {
+    display: grid;
+    grid-template-columns: 10% [card-start] 1fr 1fr 1fr [card-end] 10%;
+  }
+
+  .cards {
+    display: grid;
+    grid-column: card-start / card-end;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 10rem;
+    align-items: strech;
+    margin: 15rem 0rem;
+  }
