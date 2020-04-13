@@ -1,0 +1,37 @@
+.card {
+  background-color: $color-white;
+  padding: 2rem;
+  transition: all .2s;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  cursor: pointer;
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-row-gap: 1.5rem;
+  grid-column-gap: 2.5rem;
+  grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content);
+
+
+  &__text {
+    font-size: 1.7rem;
+  }
+
+  &__p {
+    &:not(:last-child) {
+     margin-bottom: 1rem;
+    }
+  }
+
+  &__icon {
+    fill: $color-primary;
+    width: 4.5rem;
+    height: 4.5rem;
+    grid-row: 1 / span 2;
+    transform: translateY(-1rem);
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

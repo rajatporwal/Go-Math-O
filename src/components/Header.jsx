@@ -6,8 +6,8 @@ const Header = () => {
     <footer className="footer">
       <ul className="nav">
         <li className="nav__item">
-          <Link to="/faq" className="nav__link">
-            FAQ
+          <Link to="/home" className="nav__link">
+            Home
           </Link>
         </li>
         <li className="nav__item">
@@ -36,10 +36,6 @@ const Header = () => {
           </Link>
         </li>
       </ul>
-      <p className="copyright">
-        &copy; Copyright 2020 by Rajat Porwal. All rights reserved. &nbsp; |
-        &nbsp; Terms of Service &nbsp; | &nbsp; Privacy Policy
-      </p>
     </footer>
   );
 };
